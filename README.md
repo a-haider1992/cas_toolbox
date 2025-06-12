@@ -45,11 +45,7 @@ ClassB: 0.7935
 ClassC: 0.9112
 
 ## Visualisation
-<p align="center">
-  <img src="images/Consensus_example1.png" width="300"/>
-  <img src="images/Consensus_example1.png" width="300"/>
-</p>
-
+![Description](Consensus_example1.png)
 
 ## 📖 Citation
 
