@@ -44,4 +44,30 @@ ClassA: 0.8421
 ClassB: 0.7935
 ClassC: 0.9112
 
+## Vsiaulisation
+![Consensus Heatmap](consensus_example1.png)
+![Consensus Heatmap](consensus_example2.png)
+![Consensus Heatmap](consensus_example3.png)
+
+## 📖 Citation
+
+If you use this toolbox in your research or publications, please cite it as:
+
+@misc{cas_toolbox,
+author = {Abbas Haider et. al.},
+title = {CAS Toolbox: A Tool for Computing Consensus Activation Scores from Heatmaps},
+year = {2025},
+howpublished = {\url{https://github.com/your-username/cas_toolbox}},
+note = {Accessed: 2025-07-18}
+}
+
+Alternatively, you may reference it as:
+
+> *CAS Toolbox (2025). A Python tool to compute agreement scores between class activation maps (CAMs) using strategies like mean consensus, SSIM, region IoU, and latent clustering. Available at: https://github.com/your-username/cas_toolbox*
+
+
+
+
+
+
 
