@@ -44,11 +44,6 @@ ClassA: 0.8421
 ClassB: 0.7935
 ClassC: 0.9112
 
-## Visualisation
-<p align="center">
-  <img src="Consensus_example1.png" alt="t-SNE Plot" width="500"/>
-</p>
-
 ## 📖 Citation
 If you use this toolbox in your research or publications, please cite it as:
 
