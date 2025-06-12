@@ -38,7 +38,8 @@ print("CAS Scores:")
 for cls, score in cas.items():
     print(f"{cls}: {score:.4f}")
 
-CAS Scores:
+## Output
+CAS Scores per class:
 ClassA: 0.8421
 ClassB: 0.7935
 ClassC: 0.9112
