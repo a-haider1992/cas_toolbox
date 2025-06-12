@@ -46,8 +46,8 @@ ClassC: 0.9112
 
 ## Visualisation
 <p align="center">
-  <img src="Consensus_example1.png" width="300"/>
-  <img src="Consensus_example1.png" width="300"/>
+  <img src="images/Consensus_example1.png" width="300"/>
+  <img src="images/Consensus_example1.png" width="300"/>
 </p>
 
 
