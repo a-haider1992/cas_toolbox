@@ -45,14 +45,11 @@ ClassB: 0.7935
 ClassC: 0.9112
 
 ## Visualisation
-![Description](Consensus_example1.png)
-
 <p align="center">
   <img src="Consensus_example1.png" alt="t-SNE Plot" width="500"/>
 </p>
 
 ## 📖 Citation
-
 If you use this toolbox in your research or publications, please cite it as:
 
 @misc{cas_toolbox,
