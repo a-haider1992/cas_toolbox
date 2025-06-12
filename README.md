@@ -44,10 +44,12 @@ ClassA: 0.8421
 ClassB: 0.7935
 ClassC: 0.9112
 
-## Vsiaulisation
-![Consensus Heatmap](consensus_example1.png)
-![Consensus Heatmap](consensus_example2.png)
-![Consensus Heatmap](consensus_example3.png)
+## Visualisation
+<p align="center">
+  <img src="Consensus_example1.png" width="300"/>
+  <img src="Consensus_example1.png" width="300"/>
+</p>
+
 
 ## 📖 Citation
 
