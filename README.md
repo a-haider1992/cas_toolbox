@@ -58,10 +58,3 @@ note = {Accessed: 2025-07-18}
 Alternatively, you may reference it as:
 
 > *CAS Toolbox (2025). A Python tool to compute agreement scores between class activation maps (CAMs) using strategies like mean consensus, SSIM, region IoU, and latent clustering. Available at: https://github.com/your-username/cas_toolbox*
-
-
-
-
-
-
-
