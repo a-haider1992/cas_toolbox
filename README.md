@@ -5,11 +5,12 @@
 ## Features
 
 - Multiple CAS scoring strategies:
-  - **mean**: Cosine similarity with the average heatmap
-  - **union**: Cosine similarity with the union of heatmaps
-  - **region_iou**: Intersection-over-Union (IoU) across thresholded regions
-  - **ssim**: Pairwise Structural Similarity Index (SSIM)
-  - **latent_consensus**: Latent space clustering with GMM and similarity-based consensus
+  - **Heatmap-based**
+    - **region_iou**: Intersection-over-Union (IoU) across thresholded regions
+    - **ssim**: Pairwise Structural Similarity Index (SSIM) 
+  - **Vector-based**  
+    - **Pixel-summary-based**: Consensus map is generated via pixelwise statistical operations e.g. mean, maximum and CAS metric is computed  
+    - **latent_consensus**: Our proposed strategy to quantify and visualise classwise agreement between explanations.
 - Supports `.npy`, `.png`, `.jpg`, and `.jpeg` heatmap formats
 - Optionally saves consensus visualizations and latent t-SNE plots
 - Handles invalid or missing latent vectors gracefully
@@ -51,10 +52,5 @@ If you use this toolbox in your research or publications, please cite it as:
 author = {Abbas Haider et. al.},
 title = {CAS Toolbox: A Tool for Computing Consensus Activation Scores from Heatmaps},
 year = {2025},
-howpublished = {\url{https://github.com/your-username/cas_toolbox}},
-note = {Accessed: 2025-07-18}
+published = {\url{https://github.com/your-username/cas_toolbox}},
 }
-
-Alternatively, you may reference it as:
-
-> *CAS Toolbox (2025). A Python tool to compute agreement scores between class activation maps (CAMs) using strategies like mean consensus, SSIM, region IoU, and latent clustering. Available at: https://github.com/your-username/cas_toolbox*
