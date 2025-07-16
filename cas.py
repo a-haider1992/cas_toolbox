@@ -40,7 +40,7 @@ def compute_cas_for_dir(root_dir, strategy="mean", threshold=0.2, save_vis_dir=N
             sims = [np.dot(h, consensus) for h in heatmaps]
             cas_score = float(np.mean(sims))
 
-        elif strategy == "union":
+        elif strategy == "maximum":
             consensus = np.max(heatmaps, axis=0)
             consensus /= np.linalg.norm(consensus) if np.linalg.norm(consensus) != 0 else 1
             sims = [np.dot(h, consensus) for h in heatmaps]
