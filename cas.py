@@ -6,7 +6,7 @@ import pickle
 from .utils import load_heatmap
 from .visualization import visualize_and_save_heatmap
 
-def compute_cas_for_dir(root_dir, strategy="mean", threshold=0.2, save_vis_dir=None, latent_root="latent_vectors_ResNet18-C8"):
+def compute_cas_for_dir(root_dir, strategy="mean", threshold=0.2, save_vis_dir=None, latent_root="latent_vectors_ResNet18-C8", num_classes=8):
     from skimage.metrics import structural_similarity as ssim
     from scipy.spatial.distance import cdist
     import matplotlib.pyplot as plt
@@ -71,8 +71,6 @@ def compute_cas_for_dir(root_dir, strategy="mean", threshold=0.2, save_vis_dir=N
             consensus = shaped_maps[best_pair[0]]
 
         elif strategy == "latent_consensus":
-            num_classes = 8  # adjust as needed or make configurable
-
             latent_vectors = []
             file_list = []
             heatmap_dict = {}
