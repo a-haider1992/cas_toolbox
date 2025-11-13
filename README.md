@@ -52,7 +52,7 @@ for cls, score in cas.items():
   author       = {Abbas Haider et al.},
   title        = {ConsensusXAI: A framework to examine class-wise agreement in medical imaging},
   Inproceedings = {Winter Conference on Applications of Computer Vision 2026},
-  year         = {2025},
+  year         = {2026},
   note         = {\url{https://github.com/a-haider1992/cas_toolbox}}
 }
 
