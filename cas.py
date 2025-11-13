@@ -159,27 +159,36 @@ def compute_cas_for_dir(root_dir, strategy="mean", threshold=0.2, save_vis_dir=N
                     os.makedirs(save_vis_dir, exist_ok=True)
                     plt.savefig(os.path.join(save_vis_dir, f"Latent_TSNE_{class_name}.png"))
                     plt.close()
+            
+            # Check if all vectors are (almost) identical
+            def all_vectors_identical(vectors, tol=1e-8):
+                first_vec = vectors[0]
+                return all(np.linalg.norm(vec - first_vec) < tol for vec in vectors[1:])
+            
+            if all_vectors_identical(latent_vectors):
+                sims = [0.0 for _ in latent_vectors]
+                cas_score = 0.0
+            else:
+                consensus_norm = np.linalg.norm(consensus_vec)
+                if consensus_norm > 0:
+                    consensus_vec = consensus_vec / consensus_norm
 
-            consensus_norm = np.linalg.norm(consensus_vec)
-            if consensus_norm > 0:
-                consensus_vec = consensus_vec / consensus_norm
+                sims = []
+                for vec in latent_vectors:
+                    vec_norm = np.linalg.norm(vec)
+                    if vec_norm < 1e-8:
+                        sims.append(0.0)
+                    else:
+                        sims.append(np.dot(vec / vec_norm, consensus_vec))
 
-            sims = []
-            for vec in latent_vectors:
-                vec_norm = np.linalg.norm(vec)
-                if vec_norm < 1e-8:
-                    sims.append(0.0)
-                else:
-                    sims.append(np.dot(vec / vec_norm, consensus_vec))
-
-            cas_score = float(np.mean(sims))
+                cas_score = float(np.mean(sims))
 
         else:
             raise ValueError(f"Unknown strategy: {strategy}")
 
         cas_scores[class_name] = cas_score
 
-        if save_vis_dir and 'consensus' in locals():
+        if save_vis_dir:
             visualize_and_save_heatmap(consensus, shape, class_name, save_vis_dir, strategy)
 
     return cas_scores
