@@ -50,8 +50,9 @@ for cls, score in cas.items():
 ## Citation
 @misc{cas_toolbox,
   author       = {Abbas Haider et al.},
-  title        = {CAS Toolbox: A Tool for Computing Consensus Activation Scores from Heatmaps},
+  title        = {ConsensusXAI: A framework to examine class-wise agreement in medical imaging},
+  Inproceedings = {Winter Conference on Applications of Computer Vision 2026},
   year         = {2025},
-  note         = {\url{https://github.com/your-username/cas_toolbox}}
+  note         = {\url{https://github.com/a-haider1992/cas_toolbox}}
 }
 
