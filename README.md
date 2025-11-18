@@ -26,9 +26,7 @@ Explainable AI (XAI) is essential for trust and transparency in deep learning, e
 
 ---
 
-## ⚙️ Installation
-
-Install the required dependencies with:
+## ⚙️ Installation & Usage
 
 ```bash
 pip install numpy pillow scikit-image scikit-learn matplotlib
