@@ -50,7 +50,7 @@ for cls, score in cas.items():
 
 ## Citation
 @misc{cas_toolbox,
-  author       = {Abbas Haider et al.},
+  author       = {Abbas Haider, David Wright, Ruth Hogg, Hui Wang, Tunde Peto, Richard Gault},
   title        = {ConsensusXAI: A framework to examine class-wise agreement in medical imaging},
   Inproceedings = {Winter Conference on Applications of Computer Vision 2026},
   year         = {2026},
