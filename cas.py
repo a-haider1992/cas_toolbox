@@ -3,8 +3,8 @@ from glob import glob
 import numpy as np
 import pickle
 
-from .utils import load_heatmap
-from .visualization import visualize_and_save_heatmap
+from utils import load_heatmap
+from visualisation import visualize_and_save_heatmap
 
 def compute_cas_for_dir(root_dir, strategy="mean", threshold=0.2, save_vis_dir=None, latent_root="latent_vectors_ResNet18-C8", num_classes=8):
     from skimage.metrics import structural_similarity as ssim

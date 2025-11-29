@@ -1,4 +1,4 @@
-﻿from cas_toolbox.cas import compute_cas_for_dir
+﻿from cas import compute_cas_for_dir
 
 # Number of classes on which the classifier is trained
 num_classes = 8
